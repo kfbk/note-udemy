@@ -1,0 +1,47 @@
+Note Udemy2
+
+	note-udemy でうまく行かず、質問したが回答を得ず
+	仕方なく、オリジナルを全部コピーして最初から始めようと決めた。
+
+supabase New project
+	name		  : Note Udemy
+	Database Password : oeooOGEgh9aHzvXl
+
+Next.js インストール
+	npx create-next-app@12.3.3 note-udemy2 --typescript
+
+25----------------------------------------------------------------------------
+
+	以下、次の様に続行
+
+	VS-Codeにてnote-udemy2を指定後、Terminalを開く
+	yarn add next@12.3.3
+	npm run dev		http://localhost:3000 で確認後、^C で終わる
+	yarn add @heroicons/react@v1
+	yarn add @supabase/supabase-js
+	yarn add react-query					基本的に使わないが、一部を使う
+	yarn add zustand
+	yarn add -D tailwindcss postcss autoprefixer
+	yarn add -D prettier prettier-plugin-tailwindcss
+	npx tailwindcss init -p
+	npm run dev
+
+仮ユーザ登録
+	user1@test.com	password　123456
+	user2@test.com	password　123456
+	user3@test.com	password　123456
+
+26----------------------------------------------------------------------------
+
+
+27----------------------------------------------------------------------------
+
+
+28----------------------------------------------------------------------------
+
+	api/revalitate/index.ts において
+	「if (req.query.secret !== process.env.REVALIDATE_SECRET) { 」はコメントにする
+	何故なら「req.query.secret」はSupabaseではまだ設定してないから。
+
+29----------------------------------------------------------------------------
+
